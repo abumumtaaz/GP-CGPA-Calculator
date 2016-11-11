@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/num_of_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How Many Courses?"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#ba68c8"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <Spinner
+        android:id="@+id/num_of_courses_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"></Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/grade1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/gradeA"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/grade1"></Spinner>
+
+        <TextView
+            android:id="@+id/Unit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/gradeA"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+
+
+        <Spinner
+            android:id="@+id/unitC"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/Unit1"></Spinner>
+
+        <!--End of first input row -->
+
+        <TextView
+            android:id="@+id/grade2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:layout_below="@id/grade1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/gradeB"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/gradeA"
+            android:layout_toRightOf="@id/grade2"></Spinner>
+
+        <TextView
+            android:id="@+id/Unit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/gradeB"
+            android:layout_below="@id/Unit1"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/unitC2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/unitC"
+            android:layout_toRightOf="@id/Unit2"></Spinner>
+
+        <!--End of second input row -->
+
+        <TextView
+            android:id="@+id/grade3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/grade2"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/gradeC"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/gradeB"
+            android:layout_toRightOf="@id/grade3"></Spinner>
+
+        <TextView
+            android:id="@+id/Unit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/gradeB"
+            android:layout_below="@id/Unit2"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <Spinner
+            android:id="@+id/unitC3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/unitC2"
+            android:layout_toRightOf="@id/Unit3"></Spinner>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gradeC"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Calculate GP"
+            android:textColor="#fff"
+            android:background="#ba68c8"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tot_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000"
+        android:text="Total Points: "/>
+
+    <TextView
+        android:id="@+id/tot_units"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000"
+        android:text="Total Units: "/>
+
+    <TextView
+        android:id="@+id/gp_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000"
+        android:text="Semester GP: "/>
+
+</LinearLayout>
